@@ -1,5 +1,6 @@
 *
 !ch*/
+!*.py
 !.gitignore
 !README.md
 !LICENSE
