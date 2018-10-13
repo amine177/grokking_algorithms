@@ -46,7 +46,7 @@ class Queue:
         Arguments:
             v: value
         """
-        return self.find(self.list, v)
+        return self.__find(self.list, v)
 
     def push(self, value):
         """pushes a value to the queue
@@ -99,3 +99,6 @@ if __name__ == "__main__":
         q.push(random.random() * 5)
     while not q.isempty():
         print("q.pop() = {}".format(q.pop()))
+    q.push(3)
+    print(q.find(3))
+    print(q.find(4))
